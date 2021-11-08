@@ -16,3 +16,32 @@
     </v-col>
   </v-row>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
+  data () {
+    return {
+      formData: {}
+    }
+  },
+  head () {
+    return {
+      title: 'API Integration'
+    }
+  },
+  created () {
+    console.log('Do something when page is created')
+  },
+  methods: {
+    clickHandler () {
+      alert('Clicked!')
+    }
+  }
+})
+</script>
+
+<style scoped>
+
+</style>
